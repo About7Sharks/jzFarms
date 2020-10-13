@@ -1,0 +1,136 @@
+//root
+:root{
+    //css variables
+    --main--color:  rgba(218, 218, 218, 0.11);
+    --secondary--color:rgb(30, 50, 50);
+
+}
+
+//body styles
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.363); 
+
+    
+
+  }
+
+// navbar
+.navbar{
+    justify-content: flex-end;
+    h2{
+        width: 100%;
+        text-align: left;
+    }
+    a{
+        margin: 10px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+}
+.MuiAppBar-colorPrimary{
+    background: var(--main--color) !important;
+}
+
+
+//home page scss
+.Home{
+    background: url('https://cdn.landsearch.com/listings/42WgQ/large/blanca-co-8604622.jpg');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    
+    .content{
+        width: 50vw;
+        margin: -25vh 50vw 0 0;
+        padding-left: 25vw;
+        background:var(--main--color) !important;
+        padding-top: 15px;
+        padding-bottom: 15px;  
+        box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+        h3{margin: 0px;}
+        button{
+            border: 1px solid white;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.363); 
+
+        }
+    }
+}
+//stay page
+.stay, .shop{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--secondary--color);
+    flex-direction: row;
+    button{
+        border: 1px solid white;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.363); 
+        margin-bottom: 10px;
+    }
+    img{
+        width: 100%;
+        max-width: 40vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    color: white;
+    display: flex;
+    justify-content: center;
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60vw;
+        .item{
+            background: var(--main--color);
+            width:100%;
+            max-width: 500px;
+            min-width: 280px;
+            padding-left: 25vw;
+            margin: 10px;
+            margin-left: -20vw;
+        }
+    }
+}
+//shop page 
+// .shop{
+//     min-width: 100vw;
+//     min-height: 100vh;
+//     background-color: var(--secondary--color) !important;
+//     display: flex;
+//     color: white;
+//     .content{
+//         display: inline-flex;
+//         margin: 10px;
+//         margin: 0 auto;
+//         flex-direction: column;
+//         justify-content: center;
+//         margin-top: 85px;
+//         .item{
+//             background: var(--main--color);
+//             width:100%;
+//             max-width: 500px;
+//             min-width: 280px;
+//             padding-left: 25vw;
+//             margin: 10px;
+//             margin-left: -20vw;
+//         }
+//     }
+// }
+
+
+
+
+
+// Media Queries
+@media only screen and (max-width: 850px) {
+        .stay{background-size: cover !important;}
+  }
